@@ -96,7 +96,7 @@ public class FlightLoaderService {
 	 * @param folderFile
 	 */
 	private void readFlightsFromFile(FlightFile folderflightFile, File folderFile) {
-		LOG.trace("New file found : " + folderflightFile.getFileName());
+		LOG.info("============== > New file found : " + folderflightFile.getFileName() + " < ============");
 		try {
 
 			fileReader = new FileReader(folderFile);
@@ -146,7 +146,7 @@ public class FlightLoaderService {
 			int noOfEntriesDB = dbFlightFile.getRows();
 
 			if (noOfEntriesDB != noOfEntries) {
-				LOG.trace("New entries found in file : " + folderflightFile.getFileName());
+				LOG.info("========= >> New entries found in file : " + folderflightFile.getFileName() + " << =========");
 
 				for (int rowNumber = 1 + noOfEntriesDB; rowNumber < allFlightData.size(); rowNumber++) {
 					Flight newFlight = createFlightObject(allFlightData.get(rowNumber));
