@@ -1,7 +1,7 @@
 # java-spring-mvc
 Web application for searching flights implemented using spring-mvc and hibernate.
 - Loads flights from csv files present in a target directory to MySQL database.
-- Checks for new files or new flights in existing files and adds them to database if found.
+- Checks for new files or new flights in existing files periodically and adds them to database if found.
 
 **Screens :**
 - Login screen :
