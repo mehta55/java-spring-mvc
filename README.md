@@ -2,6 +2,8 @@
 Web application for searching flights implemented using spring-mvc and hibernate.
 - Loads flights from csv files present in a target directory to MySQL database.
 - Checks for new files or new flights in existing files periodically and adds them to database if found.
+- Has option to sort search result by fare or by both fare and flight duration.
+- All valid source and destination appears in dropdown
 
 **Screens :**
 - Login screen :
